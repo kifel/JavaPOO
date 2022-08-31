@@ -1,8 +1,8 @@
-package Aula1;
+package br.com.residencia.poo;
 
 import java.util.Scanner; // Import the Scanner class
 
-class Main {
+class PrimeiraAula {
     public static void main(String[] args) {
         // A try-with-resources statement.
         try (Scanner myObj = new Scanner(System.in)) {
