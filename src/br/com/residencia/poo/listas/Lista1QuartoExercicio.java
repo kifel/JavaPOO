@@ -2,7 +2,7 @@ package br.com.residencia.poo.listas;
 
 import java.util.Scanner;
 
-public class QuartoExercicio {
+public class Lista1QuartoExercicio {
     public static void main(String[] args) {
         Scanner myObj = new Scanner(System.in);
         // It's printing a message on the screen.

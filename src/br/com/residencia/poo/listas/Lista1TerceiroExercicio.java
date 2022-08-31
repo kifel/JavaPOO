@@ -2,7 +2,7 @@ package br.com.residencia.poo.listas;
 
 import javax.swing.JOptionPane;
 
-public class TerceiroExercicio {
+public class Lista1TerceiroExercicio {
     public static void main(String[] args) {
         // It's asking the user to input a number.
         String number1 = JOptionPane.showInputDialog("Digite um número");
