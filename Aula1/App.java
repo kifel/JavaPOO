@@ -1,7 +1,14 @@
 package Aula1;
 
-public class App {
+import java.util.Scanner; // Import the Scanner class
+
+class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        // A try-with-resources statement.
+        try (Scanner myObj = new Scanner(System.in)) {
+            System.out.println("Enter username");
+            String userName = myObj.nextLine(); // Read user input
+            System.out.println("Username is: " + userName); // Output user input
+        }
     }
 }
