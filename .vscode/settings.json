@@ -6,6 +6,7 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ],
+    // Aparavras ignoradas pelo corretor ortográfico
     "cSpell.words": [
         "Exercicio"
     ]
