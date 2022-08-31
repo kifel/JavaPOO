@@ -8,9 +8,9 @@ public class Lista1QuartoExercicio {
         // It's printing a message on the screen.
         System.out.println("Digite a temperatura em Celsius");
         // It's getting the user input and storing it in the variable `temp`.
-        Double temp = myObj.nextDouble();
+        double temp = myObj.nextDouble();
         // It's converting the temperature from Celsius to Fahrenheit.
-        Double fahrenheit =  (temp * 1.8) + 32;
+        double fahrenheit =  (temp * 1.8) + 32;
 
         // It's printing the temperature in Fahrenheit with two decimal places.
         System.out.printf("A temperatura é %.2f°", fahrenheit);
