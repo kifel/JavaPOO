@@ -1,4 +1,4 @@
-package br.com.residencia.poo;
+package br.com.residencia.poo.aula1;
 
 import java.util.Scanner; // Import the Scanner class
 
