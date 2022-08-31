@@ -1,1 +1,1 @@
-Bin com o class dos aquivos
+Alguns Exercícios em java

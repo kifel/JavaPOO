@@ -1,4 +1,4 @@
-package br.com.residencia.poo.lista1;
+package br.com.residencia.poo.listas;
 
 import java.util.Scanner;
 

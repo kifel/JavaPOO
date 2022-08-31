@@ -1,4 +1,4 @@
-package br.com.residencia.poo.aula1;
+package br.com.residencia.poo.exemplos;
 
 public class PrimeiroExercicio {
     public static void main(String[] args) {

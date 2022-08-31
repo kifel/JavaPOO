@@ -1,4 +1,4 @@
-package br.com.residencia.poo.aula1;
+package br.com.residencia.poo.exemplos;
 
 import javax.swing.JOptionPane;
 
