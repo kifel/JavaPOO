@@ -21,43 +21,40 @@ public class QuartoExercicio {
         }
 
         /*
-         * int count = 0;
-         * while (count < 3) {
-         * // It's asking the user to input a number.
-         * String num = JOptionPane.showInputDialog("Digite a nota " + (count + 1) +
-         * " ");
-         * 
-         * // It's converting the string to a double.
-         * Double nota = Double.parseDouble(num);
-         * 
-         * // It's adding the value of `nota` to `soma`.
-         * soma += nota;
-         * 
-         * // It's incrementing the value of `count` by 1.
-         * count++;
-         * }
-         */
+        int count = 0;
+        while (count < 3) {
+            // It's asking the user to input a number.
+            String num = JOptionPane.showInputDialog("Digite a nota " + (count + 1) + " ");
+
+            // It's converting the string to a double.
+            Double nota = Double.parseDouble(num);
+
+            // It's adding the value of `nota` to `soma`.
+            soma += nota;
+
+            // It's incrementing the value of `count` by 1.
+            count++;
+        }
+        */
 
         /*
-         * do {
-         * 
-         * // It's asking the user to input a number.
-         * String num = JOptionPane.showInputDialog("Digite a nota " + (count + 1) +
-         * " ");
-         * 
-         * // It's converting the string to a double.
-         * Double nota = Double.parseDouble(num);
-         * 
-         * // It's adding the value of `nota` to `soma`.
-         * soma += nota;
-         * 
-         * // It's incrementing the value of `count` by 1.
-         * count++;
-         * 
-         * } while (count < 3);
-         */
+        do {
 
-        JOptionPane.showMessageDialog(null,
-                "Na disciplina " + disciplina + " O aluno " + name + " teve como media " + (soma / 3));
+            // It's asking the user to input a number.
+            String num = JOptionPane.showInputDialog("Digite a nota " + (count + 1) + " ");
+
+            // It's converting the string to a double.
+            Double nota = Double.parseDouble(num);
+
+            // It's adding the value of `nota` to `soma`.
+            soma += nota;
+
+            // It's incrementing the value of `count` by 1.
+            count++;
+
+        } while (count < 3);
+        */
+
+        JOptionPane.showMessageDialog(null,"Na disciplina " + disciplina + " O aluno " + name + " teve como media " + (soma / 3));
     }
 }
