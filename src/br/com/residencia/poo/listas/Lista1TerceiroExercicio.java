@@ -9,24 +9,24 @@ public class Lista1TerceiroExercicio {
         String number2 = JOptionPane.showInputDialog("Digite outro número");
 
         // It's converting the string to a double.
-        double num = Double.parseDouble(number1);
-        double num2 = Double.parseDouble(number2);
+        try {
+            double num = Double.parseDouble(number1);   
+            double num2 = Double.parseDouble(number2);
+            if (num < 0) {
+                JOptionPane.showMessageDialog(null, "Valor invalido");
+            }else if (num == 0 && num2 == 0){
+                JOptionPane.showMessageDialog(null, "Impossível de dividir");
+            }else {
+                double sum = num + num2;
+                double sub = num - num2;
+                double mult = num * num2;
+                double divi = num / num2;
+    
+                JOptionPane.showMessageDialog(null, "Soma: " + sum + "\nSubstração: " + sub + "\nMultiplicação: " + mult + "\nDivisão: " + divi);
+            }
+        }catch(NumberFormatException ex){
 
-        // It's checking if the number is less than 0, if it is, it will show a message saying that the
-        // value is invalid. If it's not, it will check if the number is 0 and the other number is 0,
-        // if it is, it will show a message saying that it's impossible to divide. If it's not, it will
-        // do the sum, subtraction, multiplication and division.
-        if (num < 0) {
-            JOptionPane.showMessageDialog(null, "Valor invalido");
-        }else if (num == 0 && num2 == 0){
-            JOptionPane.showMessageDialog(null, "Impossível de dividir");
-        }else {
-            double sum = num + num2;
-            double sub = num - num2;
-            double mult = num * num2;
-            double divi = num / num2;
-
-            JOptionPane.showMessageDialog(null, "Soma: " + sum + "\nSubstração: " + sub + "\nMultiplicação: " + mult + "\nDivisão: " + divi);
+            JOptionPane.showMessageDialog(null,"São permitidos apenas números","Alerta",JOptionPane.ERROR_MESSAGE);
         }
     }
 }
