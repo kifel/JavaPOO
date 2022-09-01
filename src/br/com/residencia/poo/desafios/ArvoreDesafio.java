@@ -8,7 +8,7 @@ public class ArvoreDesafio {
 
         // It's asking the user to input the size of the tree.
         Scanner myObj = new Scanner(System.in);
-        System.out.println("Digite o tamanho da arvore");
+        System.out.print("Digite o tamanho da arvore: ");
         pos = myObj.nextInt();
 
         ini = pos;
