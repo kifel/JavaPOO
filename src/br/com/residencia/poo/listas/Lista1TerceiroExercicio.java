@@ -19,7 +19,7 @@ public class Lista1TerceiroExercicio {
             // message. If it's not, it will do the math.
             if (num < 0) {
                 JOptionPane.showMessageDialog(null, "Valor invalido");
-            }else if (num == 0 && num2 == 0){
+            }else if (num == 0 || num2 == 0){
                 JOptionPane.showMessageDialog(null, "Impossível de dividir");
             }else {
                 double sum = num + num2;
