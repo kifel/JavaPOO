@@ -2,7 +2,7 @@ package br.com.residencia.poo.listas;
 
 import java.util.Scanner;
 
-public class Lista1SegundoExercicio {
+public class ListaUmSegundoExercicio {
     public static void main(String[] args) {
 
         int sum = 0;

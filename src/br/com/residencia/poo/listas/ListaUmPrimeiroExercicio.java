@@ -2,7 +2,7 @@ package br.com.residencia.poo.listas;
 
 import javax.swing.JOptionPane;
 
-public class Lista1PrimeiroExercicio {
+public class ListaUmPrimeiroExercicio {
     public static void main(String[] args) {
         // It's asking the user to input a name.
         String name = JOptionPane.showInputDialog("Digite o seu nome");
