@@ -8,10 +8,15 @@ public class Lista1TerceiroExercicio {
         String number1 = JOptionPane.showInputDialog("Digite um número");
         String number2 = JOptionPane.showInputDialog("Digite outro número");
 
-        // It's converting the string to a double.
+        // It's a try catch block. It's trying to parse the input from the user to a double. If it
+        // fails, it will show an error message.
         try {
+            // It's parsing the input from the user to a double.
             double num = Double.parseDouble(number1);   
             double num2 = Double.parseDouble(number2);
+            // It's checking if the user input is less than 0. If it is, it will show an error message.
+            // If it's not, it will check if the user input is 0. If it is, it will show an error
+            // message. If it's not, it will do the math.
             if (num < 0) {
                 JOptionPane.showMessageDialog(null, "Valor invalido");
             }else if (num == 0 && num2 == 0){
