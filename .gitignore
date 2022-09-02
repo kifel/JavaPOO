@@ -1,2 +1,7 @@
 ### VS Code ###
 .vscode/
+
+### STS ###
+.settings/
+.classpath
+.project
