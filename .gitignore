@@ -2,6 +2,7 @@
 .vscode/
 
 ### STS ###
+.metadata
 .settings/
 .classpath
 .project
