@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class ArvoreDesafio {
     public static void main(String[] args) {
-        int pos, ini, quantidade = 1;
+        int pos;
+        int ini; 
+        int quantidade = 1;
 
         // It's asking the user to input the size of the tree.
         Scanner myObj = new Scanner(System.in);
