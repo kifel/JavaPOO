@@ -6,3 +6,6 @@
 .settings/
 .classpath
 .project
+
+### JAVA ###
+bin/
