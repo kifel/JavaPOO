@@ -40,6 +40,7 @@ O projeto está desenvolvido utilizando as seguintes tecnologias:
 ## ✒️ Autores
 
 * **João Victor de Mello Pereira** - *Desenvolvimento do código* - [KifelG](https://github.com/kifel)
+* **Debora De Oliveira Souza** - *Professora de javaPOO* - [debysouza](https://github.com/debysouza)
 --- 
  
 ## 🎁 Expressões de gratidão
