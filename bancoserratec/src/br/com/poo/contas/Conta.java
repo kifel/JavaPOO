@@ -31,38 +31,30 @@ public class Conta {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
-
     public boolean sacar(double valor) {
         if (this.saldo < valor) {
-            System.out.println("Saldo insuficiente");
             return false;
         } else {
             this.saldo -= valor;
-            System.out.println("Sacado com sucesso");
             return true;
         }
     }
-
+    
     public boolean depositar(double valor) {
         if (valor < 0) {
-            System.out.println("Valor invalido");
             return false;
         } else {
             this.saldo += valor;
-            System.out.println("Depositado com sucesso");
             return true;
         }
     }
 
     public boolean transferir(double valor, Conta nomeConta) {
-        if (this.saldo < valor) {
+        boolean transfere = sacar(valor);
+        if (transfere == false) {
             System.out.println("Saldo insuficiente");
             return false;
         } else {
-            this.saldo -= valor;
             nomeConta.depositar(valor);
             System.out.println("Transferido com sucesso");
             return true;

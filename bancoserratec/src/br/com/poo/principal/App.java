@@ -6,10 +6,19 @@ public class App {
     public static void main(String[] args) {
         Conta minhaConta1 = new Conta(123, "kifel", 1000);
         Conta minhaConta2 = new Conta(1234, "Teste", 0);
-        minhaConta1.sacar(100);
-        minhaConta1.depositar(3000);
-        System.out.println("\n");
-        System.out.println("\n");
+        
+        if(minhaConta1.sacar(100) == false) {
+            System.out.println("Saldo insuficiente");
+        }else {
+            System.out.println("Sacado com sucesso");
+        }
+
+        if (minhaConta1.depositar(3000) == false) {
+            System.out.println("Impossível depositar");
+        }else {
+            System.out.println("Depositado com sucesso");
+        }
+
         minhaConta1.transferir(1000.0, minhaConta2);
         System.out.println("\n");
 
