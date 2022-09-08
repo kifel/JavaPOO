@@ -23,7 +23,7 @@ public class BalancoTrimestral {
     
     public BalancoTrimestral(double gastosJaneiro, double gastosFevereiro, double gastosMarco, double abril,
             double maio, double junho, double julho, double agosto, double setembro, double outubro, double novembro,
-            double dezembro, double somaTrimestre) {
+            double dezembro) {
         this.gastosJaneiro = gastosJaneiro;
         this.gastosFevereiro = gastosFevereiro;
         this.gastosMarco = gastosMarco;
@@ -36,20 +36,31 @@ public class BalancoTrimestral {
         this.outubro = outubro;
         this.novembro = novembro;
         this.dezembro = dezembro;
-        this.somaTrimestre = somaTrimestre;
     }
 
     public double somaT(double gastosJaneiro, double gastosFevereiro, double gastosMarco) {
+        setGastosJaneiro(gastosJaneiro);
+        setGastosFevereiro(gastosFevereiro);
+        setGastosMarco(gastosMarco);
         somaTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
         return somaTrimestre;
     }
 
     public double soma(double abril, double maio, double junho) {
+        setAbril(abril);
+        setMaio(maio);
+        setJunho(junho);
         somaTrimestre += abril + maio + junho;
         return somaTrimestre;
     }
 
     public double soma(double julho, double agosto, double setembro, double outubro, double novembro, double dezembro) {
+        setJulho(julho);
+        setAgosto(agosto);
+        setSetembro(setembro);
+        setOutubro(outubro);
+        setNovembro(novembro);
+        setDezembro(dezembro);
         somaTrimestre += julho + agosto + outubro + setembro + novembro + dezembro;
         return somaTrimestre;
     }
@@ -102,12 +113,60 @@ public class BalancoTrimestral {
         return dezembro;
     }
 
+    public void setGastosJaneiro(double gastosJaneiro) {
+        this.gastosJaneiro = gastosJaneiro;
+    }
+
+    public void setGastosFevereiro(double gastosFevereiro) {
+        this.gastosFevereiro = gastosFevereiro;
+    }
+
+    public void setGastosMarco(double gastosMarco) {
+        this.gastosMarco = gastosMarco;
+    }
+
+    public void setAbril(double abril) {
+        this.abril = abril;
+    }
+
+    public void setMaio(double maio) {
+        this.maio = maio;
+    }
+
+    public void setJunho(double junho) {
+        this.junho = junho;
+    }
+
+    public void setJulho(double julho) {
+        this.julho = julho;
+    }
+
+    public void setAgosto(double agosto) {
+        this.agosto = agosto;
+    }
+
+    public void setSetembro(double setembro) {
+        this.setembro = setembro;
+    }
+
+    public void setOutubro(double outubro) {
+        this.outubro = outubro;
+    }
+
+    public void setNovembro(double novembro) {
+        this.novembro = novembro;
+    }
+
+    public void setDezembro(double dezembro) {
+        this.dezembro = dezembro;
+    }
+
     public static void main(String[] args) {
         BalancoTrimestral balanco = new BalancoTrimestral();
- 
-        System.out.println(balanco.somaT(1.0, 1.0, 1.0)); 
-        System.out.println(balanco.soma(1.0, 1.0, 1.0));
-        System.out.println(balanco.soma(1.0, 1.0, 1.0, 1.0, 1.0, 1.0));
+
+        System.out.println(balanco.somaT(15.0, 15.0, 20.0)); 
+        System.out.println(balanco.soma(30.0, 45.0, 150.0));
+        System.out.println(balanco.soma(55.0, 1025.0, 45.0, 95.0, 456.0, 125.0));
     }
 
 }
