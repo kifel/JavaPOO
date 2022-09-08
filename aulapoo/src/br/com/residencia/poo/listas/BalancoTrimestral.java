@@ -134,37 +134,52 @@ public class BalancoTrimestral {
         this.dezembro = dezembro;
     }
 
-    public double somaT(double gastosJaneiro, double gastosFevereiro, double gastosMarco) {
-        setGastosJaneiro(gastosJaneiro);
-        setGastosFevereiro(gastosFevereiro);
-        setGastosMarco(gastosMarco);
-        somaTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
+    // calcula o segundo Trimestre
+    // public double somaT(double gastosJaneiro, double gastosFevereiro, double gastosMarco) {
+    //     setGastosJaneiro(gastosJaneiro);
+    //     setGastosFevereiro(gastosFevereiro);
+    //     setGastosMarco(gastosMarco);
+    //     somaTrimestre = gastosJaneiro + gastosFevereiro + gastosMarco;
+    //     return somaTrimestre;
+    // }
+
+    // Calcula o segundo trimestre
+    // public double soma(double abril, double maio, double junho) {
+    //     setAbril(abril);
+    //     setMaio(maio);
+    //     setJunho(junho);
+    //     somaTrimestre += abril + maio + junho;
+    //     return somaTrimestre;
+    // }
+
+    // Calcula o Semestre
+    // public double soma(double julho, double agosto, double setembro, double outubro, double novembro, double dezembro) {
+    //     setJulho(julho);
+    //     setAgosto(agosto);
+    //     setSetembro(setembro);
+    //     setOutubro(outubro);
+    //     setNovembro(novembro);
+    //     setDezembro(dezembro);
+    //     somaTrimestre += julho + agosto + outubro + setembro + novembro + dezembro;
+    //     return somaTrimestre;
+    // }
+
+    // Calcula o Trimestre, sendo ele o primeiro e o segundo
+    public double soma(double primeiroMes, double segundoMes, double terceiroMes) {
+        somaTrimestre += primeiroMes + segundoMes + terceiroMes;
         return somaTrimestre;
     }
 
-    public double soma(double abril, double maio, double junho) {
-        setAbril(abril);
-        setMaio(maio);
-        setJunho(junho);
-        somaTrimestre += abril + maio + junho;
-        return somaTrimestre;
-    }
-
-    public double soma(double julho, double agosto, double setembro, double outubro, double novembro, double dezembro) {
-        setJulho(julho);
-        setAgosto(agosto);
-        setSetembro(setembro);
-        setOutubro(outubro);
-        setNovembro(novembro);
-        setDezembro(dezembro);
-        somaTrimestre += julho + agosto + outubro + setembro + novembro + dezembro;
+    // Calcula o Semestre
+    public double soma(double primeiroMes, double segundoMes, double terceiroMes, double quartoMes, double quintoMes, double sextoMes) {
+        somaTrimestre += primeiroMes + segundoMes + terceiroMes + quartoMes + quintoMes + sextoMes;
         return somaTrimestre;
     }
 
     public static void main(String[] args) {
         BalancoTrimestral balanco = new BalancoTrimestral();
 
-        System.out.println(balanco.somaT(15.0, 15.0, 20.0));
+        System.out.println(balanco.soma(15.0, 15.0, 20.0));
         System.out.println(balanco.soma(30.0, 45.0, 150.0));
         System.out.println(balanco.soma(55.0, 1025.0, 45.0, 95.0, 456.0, 125.0));
     }
