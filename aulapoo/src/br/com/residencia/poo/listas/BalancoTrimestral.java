@@ -22,7 +22,7 @@ public class BalancoTrimestral {
 
     public BalancoTrimestral(double gastosJaneiro, double gastosFevereiro, double gastosMarco, double abril,
             double maio, double junho, double julho, double agosto, double setembro, double outubro, double novembro,
-            double dezembro) {
+            double dezembro, double somaTrimestre) {
         this.gastosJaneiro = gastosJaneiro;
         this.gastosFevereiro = gastosFevereiro;
         this.gastosMarco = gastosMarco;
@@ -35,6 +35,7 @@ public class BalancoTrimestral {
         this.outubro = outubro;
         this.novembro = novembro;
         this.dezembro = dezembro;
+        this.somaTrimestre = somaTrimestre;
     }
 
     public double getGastosJaneiro() {
