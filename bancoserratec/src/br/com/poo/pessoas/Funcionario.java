@@ -38,10 +38,12 @@ public class Funcionario {
         this.senha = senha;
     }
 
+    //This function returns the bonus of the employee, which is 10% of the salary.
     public double getBonificacao() {
         return this.salario * 0.10;
     }
 
+    // A method that checks if the password and login are correct.
     public boolean autenticar(String senha, String login) {
         if (getSenha() == senha && getCpf() == login) {
             System.out.println("Acesso permitido");
