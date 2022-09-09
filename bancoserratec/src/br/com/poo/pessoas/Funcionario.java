@@ -3,23 +3,28 @@ package br.com.poo.pessoas;
 public class Funcionario {
     protected String name;
     protected String cpf;
+    protected String agencia;
     protected double salario;
-    protected String senha;
-
+    protected int senha;
+    
+    public Funcionario () {
+        super();
+    }
+    
+    public Funcionario(String name, String cpf, String agencia, double salario, int senha) {
+        this.name = name;
+        this.cpf = cpf;
+        this.agencia = agencia;
+        this.salario = salario;
+        this.senha = senha;
+    }
+    
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getCpf() {
         return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public double getSalario() {
@@ -30,12 +35,20 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public String getSenha() {
+    public int getSenha() {
         return senha;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(int senha) {
         this.senha = senha;
+    }
+    
+    public String getAgencia() {
+        return agencia;
+    }
+
+    public void setAgencia(String agencia) {
+        this.agencia = agencia;
     }
 
     //This function returns the bonus of the employee, which is 10% of the salary.
@@ -44,7 +57,7 @@ public class Funcionario {
     }
 
     // A method that checks if the password and login are correct.
-    public boolean autenticar(String senha, String login) {
+    public boolean autenticar(int senha, String login) {
         if (getSenha() == senha && getCpf() == login) {
             System.out.println("Acesso permitido");
             return true;
