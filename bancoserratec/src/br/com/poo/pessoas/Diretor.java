@@ -31,7 +31,6 @@ public class Diretor extends Funcionario {
         this.capitalBruto = capitalBruto;
     }
 
-    @Override
     public double getBonificacao() {
         return getSalario() * 0.15;
     }
