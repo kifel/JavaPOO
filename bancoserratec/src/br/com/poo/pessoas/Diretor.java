@@ -32,6 +32,6 @@ public class Diretor extends Funcionario {
     }
 
     public double getBonificacao() {
-        return getSalario() * 0.15;
+        return super.getSalario() * 0.15;
     }
 }
