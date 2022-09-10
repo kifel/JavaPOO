@@ -1,11 +1,11 @@
 package br.com.poo.pessoas;
 
 public class Funcionario {
-    protected String name;
-    protected String cpf;
-    protected String agencia;
-    protected double salario;
-    protected int senha;
+    private String name;
+    private String cpf;
+    private String agencia;
+    private double salario;
+    private int senha;
     
     public Funcionario () {
         super();

@@ -36,7 +36,7 @@ public class Gerente extends Funcionario {
     // the salary, otherwise return the employee's bonus."
     @Override
     public double getBonificacao() {
-        return this.salario * 0.15;
+        return getSalario() * 0.15;
     }
 
 }

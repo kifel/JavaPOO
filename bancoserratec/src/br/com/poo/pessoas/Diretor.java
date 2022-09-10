@@ -33,6 +33,6 @@ public class Diretor extends Funcionario {
 
     @Override
     public double getBonificacao() {
-        return this.salario * 0.15;
+        return getSalario() * 0.15;
     }
 }

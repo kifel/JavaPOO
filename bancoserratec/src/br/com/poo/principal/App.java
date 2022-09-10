@@ -14,8 +14,8 @@ public class App {
         Diretor objDiretor = new Diretor();
         Diretor objDir = new Diretor("DiretorTeste", "1234", "25-b", 3000.0, 123456, "123-4", 10000.0);
 
-        System.out.println(objFunc.getBonificacao());
-        System.out.println(objDir.getBonificacao());
+        System.out.println(objFunc.getBonificacao() + objFunc.getSalario());
+        System.out.println(objDir.getBonificacao() + objDir.getSalario());
 
 
         
