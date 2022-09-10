@@ -5,6 +5,10 @@ public class Conta {
     private String titular;
     private double saldo;
 
+    public Conta() {
+        super();
+    }
+
     public Conta(int numero, String titular, double saldo) {
         this.numero = numero;
         this.titular = titular;

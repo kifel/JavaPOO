@@ -30,4 +30,9 @@ public class Diretor extends Funcionario {
     public void setCapitalBruto(Double capitalBruto) {
         this.capitalBruto = capitalBruto;
     }
+
+    @Override
+    public double getBonificacao() {
+        return this.salario * 0.15;
+    }
 }

@@ -1,11 +1,23 @@
 package br.com.poo.principal;
 
 import br.com.poo.contas.Conta;
+import br.com.poo.pessoas.*;
 
 public class App {
     public static void main(String[] args) {
         Conta minhaConta1 = new Conta(123, "kifel", 1000);
         Conta minhaConta2 = new Conta(1234, "Teste", 0);
+        
+        Funcionario objFuncionario = new Funcionario();
+        Funcionario objFunc = new Funcionario("kifel", "123", "25-b", 3000.0, 123456);
+        
+        Diretor objDiretor = new Diretor();
+        Diretor objDir = new Diretor("DiretorTeste", "1234", "25-b", 3000.0, 123456, "123-4", 10000.0);
+
+        System.out.println(objFunc.getBonificacao());
+        System.out.println(objDir.getBonificacao());
+
+
         
         if(minhaConta1.sacar(100) == false) {
             System.out.println("Saldo insuficiente");
