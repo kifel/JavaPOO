@@ -3,16 +3,15 @@ package br.com.poo.principal;
 import br.com.poo.contas.Conta;
 import br.com.poo.pessoas.*;
 import br.com.poo.io.LeituraEscrita;
+
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
 
-        try {
-			LeituraEscrita.leitor("test");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        ler();
 
     //     Conta minhaConta1 = new Conta(123, "kifel", 1000);
     //     Conta minhaConta2 = new Conta(1234, "Teste", 0);
@@ -50,5 +49,20 @@ public class App {
     //             + "\nNumero da conta:" + minhaConta2.getNumero());
     //     System.out.println("\n");
 
+    }
+
+    public static void ler () { 
+        Scanner myObj = new Scanner(System.in);
+        System.out.print("Digite o nome do arquivo: ");
+        String name = myObj.nextLine(); 
+        try {
+			LeituraEscrita.leitor(name);
+		} catch (FileNotFoundException e) {
+            System.out.println("Arquivo não encontrado!");
+            ler();
+        } catch (IOException e) {
+			e.printStackTrace();
+		}
+        myObj.close();
     }
 }
