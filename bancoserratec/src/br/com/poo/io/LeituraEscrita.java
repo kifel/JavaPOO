@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class LeituraEscrita {
 
-    static final String PATH_BASICO = "./temp/";
+    static final String PATH_BASICO = "./bancoserratec/temp/";
 	static final String EXTENSAO = ".txt";
 
 	public static void leitor(String path) throws IOException {
