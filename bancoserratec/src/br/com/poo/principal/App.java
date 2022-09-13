@@ -7,11 +7,14 @@ import br.com.poo.io.LeituraEscrita;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.Date;
 
 public class App {
     public static void main(String[] args) {
 
         ler();
+        Date data = new Date();
+        System.out.println(data);
 
     //     Conta minhaConta1 = new Conta(123, "kifel", 1000);
     //     Conta minhaConta2 = new Conta(1234, "Teste", 0);
@@ -57,6 +60,7 @@ public class App {
         String name = myObj.nextLine(); 
         try {
 			LeituraEscrita.leitor(name);
+            LeituraEscrita.escritor(name);
 		} catch (FileNotFoundException e) {
             System.out.println("Arquivo não encontrado!");
             ler();
