@@ -2,7 +2,7 @@
 
 Java Poo exercises and practice
 
-![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=EM%20PROGRESSO&color=GREEN&style=for-the-badge)
+![Badge em Desenvolvimento](https://img.shields.io/static/v1?label=STATUS&message=%20CONCLUIDO&color=GREEN&style=for-the-badge)
  
  
 --- 
